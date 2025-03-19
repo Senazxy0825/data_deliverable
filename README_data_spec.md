@@ -10,6 +10,8 @@ Use to detect duplicates?: no
 Required?: yes
 Will use in analysis?: Yes, price is an important indicator and is likely to be highly correlated to many other important fields like homeowner income, state tax, and house size.
 Sensitive?: no
+
+
 Bed: int
 Default value: 1.0
 Range: 1.0 - 19.0
@@ -19,6 +21,8 @@ Use to detect duplicates?: yes, we can combine this with bath, house_size, city,
 Required?: yes
 Will use in analysis?: Yes, number of bedrooms is likely to be highly correlated with house_size, which itself can inform a number of useful trends 
 Sensitive?: no
+
+
 Bath: int
 Default value: 1.0
 Range: 1.0 - 16.0
@@ -28,6 +32,8 @@ Use to detect duplicates?: yes, we can combine this with bed, house_size, city, 
 Required?: yes
 Will use in analysis?: Yes, number of bathrooms is likely to be highly correlated with house_size, which itself can inform a number of useful trends 
 Sensitive?: no
+
+
 Status: string
 Default value: “For sale”
 Range: {“for_sale”, “sold”}
@@ -37,6 +43,8 @@ Use to detect duplicates?: no
 Required?: no
 Will use in analysis?: no, not very related to the rest of the attributes and our hypotheses
 Sensitive?: no
+
+
 Zip_code: string 
 Default value: n/a
 Range: Must be one of the values in this list: https://postalpro.usps.com/ZIP_Locale_Detail
@@ -46,6 +54,8 @@ Use to detect duplicates?: yes, can use this as a metric of location
 Required?: no
 Will use in analysis?: no, while zip code is a useful way of finding useful financial information relating to a particular area, we have already found some useful financial information to be joined here, so zip code itself is not so useful
 Sensitive?: no
+
+
 House_size: float
 Default value: 0.0
 Range: 246.0 - 247421.0
@@ -55,6 +65,8 @@ Use to detect duplicates?: yes, house size is a good way of telling uniqueness o
 Required?: yes
 Will use in analysis?: yes, house_size is likely to be connected to wealth of a region, which has strong implications for homeowner income, and possibly for taxation
 Sensitive?: no
+
+
 Effective tax rate: float
 Default value: 0.0
 Range: 0.27% - 2.23%
@@ -64,6 +76,8 @@ Use to detect duplicates?: no, this is exactly the same as state, which itself i
 Required?: yes
 Will use in analysis?: yes, tax is a major element of what we are trying to test for
 Sensitive?: no
+
+
 2023_avg_income: float
 Default value: 0.0
 Range: 39952.0949609859 - 219892.6275283541
