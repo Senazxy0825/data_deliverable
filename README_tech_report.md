@@ -1,6 +1,6 @@
 # tech report
 How many data points are there in total?
-Our full dataset has 1485961 entries in total, we also have a truncated version with only the Massachusetts entries that has 4139 entries. With so many entries, even if we split by state, this is without a doubt enough entries for hypothesis testing as well as validating our results.
+Our full dataset has 1485961 entries in total, we also have a final truncated version with only 5000 entries. With so many entries, even if we split by state, this is without a doubt enough entries for hypothesis testing as well as validating our results.
 
 What are the identifying attributes?
 A combination of bed, bath, acre_lot, city, state, house_size, and zip_code can reasonably be used to discern houses from each other. A house having the exact same size and number of bedrooms and bathrooms in the same city and zip code is not terribly likely. In the rare case where there may be two unique houses with all those being the same, we can use price as well to help discern duplicates from uniques, though using price is not ideal since price is constantly fluctuating and we may have two entries for the same house from different times, with different prices.
